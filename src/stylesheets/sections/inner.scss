@@ -1,0 +1,376 @@
+.solo {
+  &-header {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+
+    &-wrap {
+      height: 50vh;
+      color: $white;
+    }
+  }
+
+  &-content {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  &-text {
+    font-family: $ffText;
+    line-height: 1.8;
+
+    p {
+      margin-bottom: 2em;
+    }
+  }
+
+  &-icon {
+    background-color: $primary;
+    text-align: center;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+    img {
+      display: block;
+      width: 120px;
+      max-width: 100%;
+    }
+  }
+
+  &-bread {
+    font-size: em(24);
+
+    @include media-breakpoint-down('md') {
+      font-size: em(16);
+    }
+
+    a {
+      color: inherit;
+
+      &::before {
+        display: inline-block;
+        content: '/';
+        margin-right: 4px;
+      }
+
+      &:first-child {
+        &::before {
+          content: '';
+        }
+      }
+    }
+  }
+
+  &-title {
+    h1 {
+      font-size: em(60);
+      letter-spacing: -1px;
+
+      @include media-breakpoint-down('md') {
+        font-size: em(30);
+      }
+    }
+  }
+
+  &-info {
+    h2 {
+      font-size: em(24);
+      color: #216045;
+      letter-spacing: -0.5px;
+      margin-top: em(20, 24);
+
+      @include media-breakpoint-down('md') {
+        font-size: em(18);
+      }
+    }
+
+    &-term {
+      opacity: 0.7;
+      font-size: em(24);
+      letter-spacing: -0.4px;
+
+      @include media-breakpoint-down('md') {
+        font-size: em(18);
+      }
+    }
+
+    &-row {
+      align-items: flex-end;
+    }
+
+    &-value {
+      letter-spacing: -0.4px;
+      font-size: em(36);
+      font-weight: bold;
+      line-height: 1;
+
+      @include media-breakpoint-down('md') {
+        font-size: em(24);
+      }
+    }
+  }
+}
+
+.contact {
+  &-title {
+    font-size: em(24);
+    text-transform: uppercase;
+    color: #2e674e;
+    letter-spacing: -0.4px;
+  }
+
+  &-row {
+    display: flex;
+    margin: 1em 0;
+  }
+
+  &-term {
+    opacity: 0.7;
+    font-size: em(18);
+    flex-basis: 101px;
+  }
+
+  &-value {
+    font-family: $ffText;
+    font-size: em(18);
+  }
+}
+
+.share {
+  &-block {
+    margin-top: 1em;
+  }
+
+  &-title {
+    font-size: em(18);
+    opacity: 0.7;
+  }
+
+  &-row {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  &-icon {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 3px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &--twitter {
+      background-color: #63cdf1;
+      background-image: url('../images/soc-icon-4.svg');
+    }
+
+    &--facebook {
+      background-color: #507cbe;
+      background-image: url('../images/soc-icon-1.svg');
+    }
+
+    &--youtube {
+      background-color: #f16261;
+      background-image: url('../images/soc-icon-2.svg');
+    }
+
+    &--instagram {
+      background-color: #c7c5b3;
+      background-image: url('../images/soc-icon-3.svg');
+    }
+  }
+}
+
+.price-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: $white;
+  font-size: em(30);
+  letter-spacing: -1px;
+  padding: em(20, 30) em(70, 30) em(13, 30) em(40, 30);
+  background-color: #216045;
+  position: relative;
+
+  @include media-breakpoint-down('md') {
+    font-size: em(20);
+  }
+
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid $white;
+    border-right: 3px solid $white;
+    transform: rotate(45deg) translateY(-50%);
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+  }
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  border-top: 3px solid $white;
+  border-right: 3px solid $white;
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(-135deg);
+}
+
+.calendar {
+  padding-bottom: 50px;
+
+  &-title {
+    font-size: em(30);
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+  }
+
+  &-item {
+    position: relative;
+    margin-bottom: 18px;
+    display: inline-block;
+
+    a {
+      color: inherit;
+      transition: color 0.4s;
+    }
+
+    &:hover {
+      a {
+        color: $white;
+      }
+
+      .calendar-item-img {
+        &::before {
+          background-color: rgba(0, 0, 0, 0.57);
+        }
+      }
+    }
+
+    &-img {
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: background-color 0.4s;
+        background-color: rgba(178, 184, 197, 0.94);
+      }
+    }
+
+    &-date {
+      opacity: 0.7;
+    }
+
+    &-title {
+      font-size: em(28);
+      letter-spacing: -0.4px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-top: 10px;
+
+      @include media-breakpoint-down('md') {
+        font-size: em(20);
+      }
+    }
+
+    &-desc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 15px;
+    }
+  }
+}
+
+.table {
+  &-title {
+    color: #216045;
+    font-size: em(24);
+    text-transform: uppercase;
+
+    @include media-breakpoint-down('md') {
+      font-size: em(18);
+    }
+  }
+
+  &-footer {
+    font-family: $ffText;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  thead {
+    background-color: $primary;
+    color: $white;
+
+    th {
+      vertical-align: middle;
+      border-bottom: none;
+      font-size: em(22);
+      line-height: 1.2;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      font-weight: normal;
+
+      @include media-breakpoint-down('md') {
+        font-size: em(18);
+      }
+    }
+
+    td {
+      border-top: none;
+      opacity: 0.5;
+      font-size: em(20);
+    }
+  }
+
+  tbody {
+    td {
+      font-size: em(36);
+      font-weight: bold;
+      vertical-align: baseline;
+      white-space: nowrap;
+
+      @include media-breakpoint-down('md') {
+        font-size: em(24);
+      }
+
+      &:first-of-type {
+        white-space: normal;
+        font-weight: normal;
+        font-size: em(22);
+        line-height: 1.2;
+
+        @include media-breakpoint-down('md') {
+          font-size: em(18);
+        }
+      }
+    }
+  }
+}
