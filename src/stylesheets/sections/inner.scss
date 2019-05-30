@@ -7,6 +7,7 @@
     &-wrap {
       height: 50vh;
       color: $white;
+      background-size: cover;
     }
   }
 
@@ -67,7 +68,7 @@
   &-title {
     h1 {
       font-size: em(60);
-      letter-spacing: -1px;
+      font-variation-settings: "wght" 400, "wdth" 75;
 
       @include media-breakpoint-down('md') {
         font-size: em(30);
@@ -79,8 +80,7 @@
     h2 {
       font-size: em(24);
       color: #216045;
-      letter-spacing: -0.5px;
-      margin-top: em(20, 24);
+      font-weight: bold;
 
       @include media-breakpoint-down('md') {
         font-size: em(18);
@@ -90,7 +90,6 @@
     &-term {
       opacity: 0.7;
       font-size: em(24);
-      letter-spacing: -0.4px;
 
       @include media-breakpoint-down('md') {
         font-size: em(18);
@@ -102,7 +101,6 @@
     }
 
     &-value {
-      letter-spacing: -0.4px;
       font-size: em(36);
       font-weight: bold;
       line-height: 1;
@@ -119,7 +117,7 @@
     font-size: em(24);
     text-transform: uppercase;
     color: #2e674e;
-    letter-spacing: -0.4px;
+    font-weight: bold;
   }
 
   &-row {
@@ -192,7 +190,6 @@
   text-transform: uppercase;
   color: $white;
   font-size: em(30);
-  letter-spacing: -1px;
   padding: em(20, 30) em(70, 30) em(13, 30) em(40, 30);
   background-color: #216045;
   position: relative;
@@ -238,7 +235,7 @@
 
   &-title {
     font-size: em(30);
-    letter-spacing: -0.4px;
+    font-weight: bold;
     text-transform: uppercase;
   }
 
@@ -285,14 +282,13 @@
     }
 
     &-title {
-      font-size: em(28);
-      letter-spacing: -0.4px;
+      font-size: em(30);
       font-weight: bold;
       line-height: 1.2;
       margin-top: 10px;
 
       @include media-breakpoint-down('md') {
-        font-size: em(20);
+        font-size: em(22);
       }
     }
 
@@ -311,6 +307,7 @@
   &-title {
     color: #216045;
     font-size: em(24);
+    font-weight: bold;
     text-transform: uppercase;
 
     @include media-breakpoint-down('md') {
@@ -333,7 +330,7 @@
     th {
       vertical-align: middle;
       border-bottom: none;
-      font-size: em(22);
+      font-size: em(26);
       line-height: 1.2;
       border-left: 1px solid rgba(255, 255, 255, 0.2);
       font-weight: normal;
@@ -369,6 +366,14 @@
 
         @include media-breakpoint-down('md') {
           font-size: em(18);
+        }
+      }
+    }
+
+    tr {
+      &:last-child {
+        td {
+          border-bottom: 1px solid #dee2e6;
         }
       }
     }

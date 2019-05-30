@@ -259,8 +259,6 @@
 
     li {
       font-size: em(30);
-      font-family: $ffHeader;
-      letter-spacing: -1px;
       margin-bottom: 10px;
 
       @include media-breakpoint-down('md') {
@@ -281,7 +279,6 @@
     color: $white;
     height: 145px;
     font-size: em(24);
-    letter-spacing: -1px;
     padding: 25px 35px 25px 25px;
     line-height: 1;
     display: flex;
@@ -289,7 +286,7 @@
     transition: background-color 0.4s, height 0.4s;
 
     @include media-breakpoint-down('md') {
-      padding: 10px;
+      padding: 15px 10px;
       height: 110px;
       font-size: em(16);
     }
@@ -299,12 +296,45 @@
       background-color: rgba(33, 96, 69, 0.9);
 
       @include media-breakpoint-down('md') {
-        height: 120px;
+        height: 110px;
       }
     }
 
     &-title {
       margin-top: auto;
+      position: relative;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        top: 50%;
+        margin-top: -8px;
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid $white;
+        border-right: 3px solid $white;
+        transform: rotate(45deg);
+        position: absolute;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.4s, right 0.4s;
+        right: -40px;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+          transform: rotate(45deg);
+          right: 0;
+        }
+      }
     }
 
     &-icon {
@@ -370,12 +400,26 @@
           transform: translateX(-10%);
           opacity: 0;
         }
+
+        .carousel-item-img {
+          animation-name: scale;
+          animation-duration: 12s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
       }
 
       &.carousel-item-next {
         .main-carousel-content {
           transform: translateX(10%);
           opacity: 0;
+        }
+
+        .carousel-item-img {
+          animation-name: scale;
+          animation-duration: 12s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
         }
       }
 
@@ -384,14 +428,25 @@
           opacity: 1;
           transform: translateX(0);
         }
+
+        .carousel-item-img {
+          animation-name: scale;
+          animation-duration: 12s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
       }
     }
 
     &-arrows {
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: 0;
       right: 0;
+
+      @include media-breakpoint-up('xl') {
+        top: 40%;
+      }
     }
 
     &-control {
@@ -411,12 +466,12 @@
       }
 
       &-prev {
-        left: 5%;
+        left: 60px;
         transform: scaleX(-1);
       }
 
       &-next {
-        right: 5%;
+        right: 60px;
       }
     }
 
@@ -443,7 +498,7 @@
         padding-left: 5%;
 
         @include media-breakpoint-down('sm') {
-          padding-bottom: 230px;
+          padding-bottom: 324px;
         }
 
         a {
@@ -464,7 +519,6 @@
 
         h2 {
           font-size: em(72);
-          letter-spacing: -1px;
 
           @include media-breakpoint-down('sm') {
             font-size: em(36);
@@ -542,5 +596,15 @@
 
   a {
     color: inherit;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
   }
 }

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('Bahnschrift-Condensed.woff2') format('woff2'),
+        url('Bahnschrift-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('Bahnschrift-BoldCondensed.woff2') format('woff2'),
+        url('Bahnschrift-BoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('Bahnschrift-LightCondensed.woff2') format('woff2'),
+        url('Bahnschrift-LightCondensed.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

@@ -1,6 +1,6 @@
 $ffHeader: 'Bahnschrift Condensed', sans-serif;
 $ffText: 'Open Sans', sans-serif;
-$ffMain: 'Bahnschrift Condensed', 'Open Sans Condensed', sans-serif;
+$ffMain: 'Bahnschrift Condensed', 'Roboto Condensed', sans-serif;
 
 $white:    #fff !default;
 $gray-100: #f0f0f0 !default;
@@ -45,14 +45,14 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 1070px,
   // Extra large screen / wide desktop
-  xl: 1200px
+  xl: 1680px
 );
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 1070px,
-  xl: 1220px
+  lg: 100%,
+  xl: 100%
 );
 
 $grid-gutter-width: 20px !default;

@@ -1,3 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="26" viewBox="0 0 90 26">
-  <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="90" height="26" xlink:href="data:img/png;base64,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"/>
+<svg width="144" height="52" viewBox="0 0 144 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M0 52.206H144" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 51C9 44.7 7 38.632 7 33.9C7 21.474 37.206 6 72 6C106.794 6 137 21.474 137 33.9C137 39.325 135 44.7 131 51" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.5 48.287H132.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M89.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M103.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M116.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M121.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M125.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M128.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.5 48.5V51.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M59.5 15.5H84.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.5 18.5H94.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.5 21.5H102.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.5 24.5H108.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.5 27.5H115.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M121.5 30.5H22.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.5 33.5H125.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5 36.5H128.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5 39.5H131.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M132.5 42.5H11.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5 45.5H133.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="144" height="52" fill="white"/>
+</clipPath>
+</defs>
 </svg>

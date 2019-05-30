@@ -4,6 +4,7 @@ body {
   background-image: url('../images/bg-pattern.png');
   background-repeat: repeat-y;
   background-position: top right;
+  font-variation-settings: "wght" 400, "wdth" 75;
 }
 
 .body {
@@ -31,7 +32,7 @@ body {
       height: 100%;
     }
 
-    .col-3 {
+    .col-6 {
       border-left: 1px solid $white;
       opacity: 0.12;
 
@@ -98,5 +99,12 @@ body {
     .body-lines {
       height: 100%;
     }
+  }
+}
+
+.container {
+  @include media-breakpoint-up('lg') {
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }

@@ -1,7 +1,10 @@
 @mixin font-face($font-family, $url, $weight: '400', $style: 'regular') {
   @font-face {
     font-family: '#{$font-family}';
-    src: url('#{$url}.woff2') format('woff2');
+    src:
+      url('#{$url}.woff2') format('woff2'),
+      url('#{$url}.woff') format('woff'),
+      url('#{$url}.ttf') format('ttf');
     font-weight: $weight;
     font-style: $style;
   }

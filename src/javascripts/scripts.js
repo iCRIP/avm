@@ -48,6 +48,10 @@ jQuery(document).ready(function ($) {
   function () {
     barInterval = setInterval(progressBarCarousel, 30);
   });
+
+  $('.carousel-indicators a').click(function (event) {
+    event.stopPropagation();
+  })
     
   $('#main-carousel').on('slide.bs.carousel', function (event) {
     const index = event.to + 1;
