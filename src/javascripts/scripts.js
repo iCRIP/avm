@@ -59,4 +59,18 @@ jQuery(document).ready(function ($) {
 
     $('.carousel-runner-current').text(digit);
   });
+
+  
+  $('.filter-select').hover(function () {
+    $(this).addClass('active');
+  }, function () {
+    $(this).removeClass('active');
+  });
+
+  $('.filter-select-item').click(function () {
+    const wrapper = $(this).parent().parent();
+    const text = $(this).find('.filter-select-text').text();
+    wrapper.find('.filter-select-current').text(text);
+    wrapper.removeClass('active');
+  });
 });
