@@ -6,6 +6,7 @@
 
     &-wrap {
       height: 50vh;
+      min-height: 300px;
       color: $white;
       background-size: cover;
       background-repeat: no-repeat;
@@ -255,6 +256,7 @@
   padding: em(20, 30) em(70, 30) em(13, 30) em(40, 30);
   background-color: #216045;
   position: relative;
+  transition: background-color 0.4s;
 
   @include media-breakpoint-down('md') {
     font-size: em(20);
@@ -274,8 +276,9 @@
   }
 
   &:hover {
+    background-color: $primary;
     text-decoration: none;
-    opacity: 0.8;
+    color: $white;
   }
 }
 
@@ -618,7 +621,7 @@
 
       input {
         position: absolute;
-        left: -100vh;
+        left: -200vw;
       }
     }
 
@@ -713,5 +716,151 @@
     font-size: em(24);
     font-weight: bold;
     color: $secondary;
+  }
+}
+
+.price {
+  margin-bottom: 3em;
+
+  &-page {
+    font-size: em(24);
+    line-height: 1.2;
+
+    @include media-breakpoint-down('md') {
+      font-size: em(18);
+    }
+
+    img.full-width {
+      width: 129%;
+      margin-left: -14.333%;
+
+      @include media-breakpoint-down('md') {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    ol {
+      padding-left: 20px;
+      margin-bottom: 2em;
+      color: $green;
+      line-height: 1.2;
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      span {
+        color: $black;
+      }
+    }
+
+    .img {
+      position: relative;
+      margin-bottom: 1em;
+
+      img {
+        display: block;
+      }
+
+      &-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: $white;
+        font-size: em(30, 24);
+        padding-bottom: em(50, 24);
+
+        @include media-breakpoint-down('md') {
+          padding-bottom: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  &-item {
+    border-bottom: 1px solid $secondary;
+    padding-bottom: 10px;
+
+    &.active {
+      .price-drop {
+        max-height: 100vh;
+      }
+
+      .price-arrow {
+        transform: rotate(225deg) translate(-8px);
+
+        &::before {
+          transform: scale(-1) translate(3px, -3px);
+        }
+      }
+    }
+  }
+
+  &-drop {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s;
+  }
+
+  &-title {
+    font-size: em(36, 24);
+    font-weight: bold;
+    color: $green;
+    line-height: 1;
+  }
+
+  &-show {
+    position: relative;
+    padding: 20px 50px 0 0;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    padding: 0.3em 0 0.2em;
+  }
+
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 30px;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid $green;
+    border-right: 3px solid $green;
+    transform: rotate(135deg);
+    transition: transform 0.4s;
+
+    &::before {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 16px;
+      height: 16px;
+      border-top: 3px solid $green;
+      border-right: 3px solid $green;
+      content: '';
+      transform-origin: right top;
+      transition: transform 0.4s;
+    }
+  }
+
+  &-term {
+    flex-basis: 60%;
+    color: $secondary;
+  }
+
+  &-value {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: right;
+    font-weight: bold;
+    font-size: em(36, 24);
+    flex-basis: 40%;
   }
 }

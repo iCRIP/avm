@@ -73,4 +73,8 @@ jQuery(document).ready(function ($) {
     wrapper.find('.filter-select-current').text(text);
     wrapper.removeClass('active');
   });
+
+  $('.price-arrow').click(function () {
+    $(this).closest('.price-item').toggleClass('active');
+  })
 });
